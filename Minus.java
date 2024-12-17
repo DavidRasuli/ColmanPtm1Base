@@ -6,6 +6,10 @@ public class Minus extends BinaryExpression {
 		super(left, right);
 	}
 
+	public Minus(double left, double right){
+		super(left,right);
+	}
+
 	@Override
 	public double calculate() {
 		return left.calculate()-right.calculate();
