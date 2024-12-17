@@ -8,4 +8,8 @@ public abstract class BinaryExpression implements Expression {
 		this.right=right;
 	}
 
+	public BinaryExpression(double left, double right) {
+		this(new Number(left), new Number(right));
+	}
+
 }
